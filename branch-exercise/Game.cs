@@ -28,13 +28,17 @@ namespace MohawkGame2D
         {
             numberOfNuggets += 1;
             MySuperUncoolFunction();
+
+            MyCoolFunction();
         }
 
 
         void MySuperUncoolFunction()
         {
-            if (numberOfNuggets == 1000) {
-            MyCoolFunction();
+            if (numberOfNuggets == 1000)
+            {
+                Console.WriteLine("Poop");
+            }
         }
 
         void MyCoolFunction()
@@ -42,8 +46,6 @@ namespace MohawkGame2D
             if (2+4 == 6)
             {
                 Draw.Rectangle(new Vector2(10, 10), new Vector2(100, 10));
-            }
-                Console.WriteLine("Poop");
             }
         }
     }
