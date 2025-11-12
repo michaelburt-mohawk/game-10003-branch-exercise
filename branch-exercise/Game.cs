@@ -12,7 +12,7 @@ namespace MohawkGame2D
     {
         // Place your variables here:
 
-
+        int numberOfNuggets = 10;
         /// <summary>
         ///     Setup runs once before the game loop begins.
         /// </summary>
@@ -26,7 +26,17 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
+            numberOfNuggets += 1;
+            MySuperUncoolFunction();
+        }
 
+
+        void MySuperUncoolFunction()
+        {
+            if (numberOfNuggets == 1000) {
+
+                Console.WriteLine("Poop");
+            }
         }
     }
 
