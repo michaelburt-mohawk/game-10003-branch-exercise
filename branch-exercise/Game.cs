@@ -26,7 +26,15 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
+            MyCoolFunction();
+        }
 
+        void MyCoolFunction()
+        {
+            if (2+4 == 6)
+            {
+                Draw.Rectangle(new Vector2(10, 10), new Vector2(100, 10));
+            }
         }
     }
 
